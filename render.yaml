@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: data-converter-api
+    runtime: python-3.11
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn main:app --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --timeout 120"
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./converter.db
+      - key: API_KEY_REQUIRED
+        value: "false"
+      - key: PYTHONUNBUFFERED
+        value: "1"

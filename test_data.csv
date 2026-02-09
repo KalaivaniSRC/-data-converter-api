@@ -1,0 +1,7 @@
+name,age,city,profession,salary,email
+John Doe,28,New York,Software Engineer,75000,john@example.com
+Jane Smith,32,San Francisco,Product Manager,85000,jane@example.com
+Bob Johnson,25,Austin,Data Scientist,70000,bob@example.com
+Alice Williams,30,Seattle,DevOps Engineer,80000,alice@example.com
+Charlie Brown,35,Chicago,Senior Developer,95000,charlie@example.com
+Diana Prince,29,Boston,UX Designer,68000,diana@example.com
